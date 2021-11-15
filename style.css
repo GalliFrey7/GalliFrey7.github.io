@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+    font-size: 14px;
+    color: #6c7279;
+    background-color: #000000;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+p{
+    margin: 0 0 10px;
+}
+
+.container{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+.header{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__logo>img{
+    max-height: 70px;
+}
+
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 2px solid#515369
+}
+
+
+.nav{
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    margin-left: 50px;
+    color: #000000;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity 0.1s linear;
+}
+
+.nav__link:hover{
+    opacity: 1;
+}
+
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    padding-top: 100px;
+
+    background: url("image/book.jpg") center;
+}
+
+.intro__inner{
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__title{
+    margin: 0 0 30px;
+    font-size: 65px;
+    line-height: 1.1;
+    color: #000000;
+    text-transform: uppercase;
+
+}
+
+
+.intro__sub{
+    margin-bottom: 60px;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 18px;
+
+    border-radius: 3px;
+
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background 0.1s linear;
+}
+
+.btn--sec{
+    background-color: #dd3434;
+}
+
+.btn--sec:hover{
+    background-color: #e84545;
+}
+
+.footer{
+    width: 98%;
+    float: left;
+    padding: 1%;
+    border-top: 2px solid silver;
+    margin: 20px;
+}
+
+
+.social{
+    float: left;
+    width: 50%;
+}
+
+.social img{
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-right: 15px;
+}
+
+.rights{
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-size: 1.1em
+;
+}
+
+.video{
+    padding: 20px;
+}
+
+.sad{
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+
+
+.slider{
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.middle{
+    position: relative;
+    top: 225px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation{
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #ddd;
+    opacity: .7;
+    border-radius: 5px;
+    transition: all .4s ease;
+}
+
+.bar:hover{
+    opacity: .8;
+    transform:scale(1.1);
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 25%;
+    transition: all .6s ease;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -25%;
+}
+
+#r3:checked ~ .s1{
+    margin-left: -50%;
+}
+
+#r4:checked ~ .s1{
+    margin-left: -75%;
+}
